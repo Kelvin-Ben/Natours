@@ -21,8 +21,12 @@
   }
 }
 .section-tours {
-  // height: 95vh;
   padding: 20rem 0 15rem 0;
   margin-top: -5rem;
   background-color: $color-grey-light-1;
+}
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+  // background-color: rgba($color-white 0.85);
 }
