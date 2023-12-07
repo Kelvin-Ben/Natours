@@ -1,5 +1,6 @@
 /* styling the button */
 .btn {
+  &,
   &:link,
   &:visited {
     text-decoration: none;
@@ -11,6 +12,10 @@
     position: relative;
     font-size: $default-font-size;
     /* backface-visibility: hidden; */
+
+    // for a button element
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-0.3rem);
