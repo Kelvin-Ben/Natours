@@ -4,7 +4,8 @@
   "description": "A landing page for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,10 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "lite": "^4.0.5",
+    "lite-server": "^2.6.1",
+    "server": "^1.0.38"
   }
 }
