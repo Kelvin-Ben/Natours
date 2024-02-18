@@ -3,6 +3,10 @@
 }
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+
+  @include respond(tablet-port) {
+    margin-bottom: 4.5rem !important;
+  }
 }
 .u-margin-top-huge {
   margin-top: 10rem !important;
@@ -15,4 +19,9 @@
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include respond(tablet-port) {
+    margin-bottom: 3rem !important;
+    border: 1px solid red;
+  }
 }
