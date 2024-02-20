@@ -611,13 +611,18 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 2px;
     width: 75%;
+    height: auto;
     background-color: #fff;
     display: table;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s; }
   .popup__left {
     width: 33.333333%;
+    height: 100%;
     display: table-cell; }
+    @media (max-width: 97.5em) {
+      .popup__left {
+        display: none; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -633,6 +638,10 @@ body {
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        hyphens: none;
+        display: flex; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
