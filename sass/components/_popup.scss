@@ -10,6 +10,8 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  background-color: rgba($color-grey-dark-3, $alpha: 0.3);
 
   &__content {
     @include absCenter;
@@ -17,7 +19,6 @@
     height: auto;
     background-color: $color-white;
     display: table;
-    // opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
   }
@@ -42,7 +43,6 @@
   &__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
-
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
